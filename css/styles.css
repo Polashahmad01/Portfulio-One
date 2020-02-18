@@ -1,0 +1,273 @@
+/* Importing Fonts */
+@import url('https://fonts.googleapis.com/css?family=Cabin&display=swap');
+
+:root {
+  --body-color: #fff;
+  --primary-color: #FE9900;
+  --secondary-color: #c06c84;
+  --max-width: 1100px;
+  --link-color: #333;
+}
+
+/* Css Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General Styling */
+body {
+  background: var(--body-color);
+  line-height: 1.4rem;
+  font-family: 'Cabin', sans-serif;
+}
+
+h1, h2, h3 {
+  color: var(--link-color);
+}
+
+p {
+  font-size: 1rem;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--link-color);
+}
+
+/* Utility Styling */
+.container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 0 1rem;
+}
+
+.py-1 { padding: 1rem 0}
+.py-2 { padding: 2rem 0}
+.py-3 { padding: 3rem 0}
+
+/* Navbar Styling */
+#navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+#navbar .logo {
+  padding: .8rem;
+}
+
+#navbar .logo a {
+  font-size: 2rem;
+  color: var(--link-color);
+}
+
+#navbar .logo a:hover {
+  color: var(--primary-color);
+}
+
+#navbar ul {
+  display: flex;
+  padding-top: 1rem;
+}
+
+#navbar ul li a {
+  display: inline-block;
+  padding-left: 2rem;
+}
+
+#navbar ul li a:hover {
+  color: var(--primary-color);
+}
+
+#navbar .login {
+  padding-top: .5rem;
+}
+
+#navbar .login .sign-in,
+#navbar .login .sign-up {
+  margin: 0 .5rem;
+  padding: .5rem 1.3rem;
+}
+
+#navbar .login .sign-in,
+#navbar .login .sign-up {
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid var(--primary-color);
+  background: var(--primary-color);
+  color: var(--body-color);
+  font-weight: bold;
+}
+
+#navbar .login .sign-in {
+  background: var(--body-color);
+  color: var(--primary-color);
+}
+
+#navbar .login .sign-in:hover {
+  background: var(--primary-color);
+  color: var(--body-color);
+}
+
+#navbar .login .sign-up:hover {
+  color: var(--primary-color);
+  background: var(--body-color);
+}
+
+/* Design Section Styling */
+#design {
+  display: flex;
+  align-items: center;
+}
+
+#design .design-content {
+  flex: 1;
+}
+#design .design-img {
+  flex: 2;
+}
+
+#design .design-content h1 {
+  font-size: 2.6rem;
+  line-height: 3rem;
+  margin-bottom: 3rem;
+}
+
+#design .design-content p {
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  margin-bottom: 2.5rem;
+}
+
+#design .design-content .btn {
+  cursor: pointer;
+  border-radius: 5px;
+  padding: .5rem .8rem;
+  border: 1px solid var(--primary-color);
+  background: var(--primary-color);
+  color: var(--body-color);
+  font-weight: bold;
+}
+
+#design .design-content .btn:hover {
+  background: var(--body-color);
+  color: var(--primary-color);
+}
+
+#design .design-content .link {
+  margin-left: 1rem;
+  text-decoration: underline;
+  color: var(--primary-color);
+}
+
+#design .design-img img {
+  display: block;
+  margin: auto;
+  width: 100%;
+}
+
+
+
+
+
+
+/* Media Query */
+@media only screen and (max-width: 500px) {
+  /* Navbar Styling */
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--link-color);
+  }
+
+  #navbar .logo {
+    padding-top: .5rem;
+  }
+
+  #navbar .logo a {
+    font-size: 1.7rem;
+    color: var(--link-color);
+  }
+
+  #navbar ul {
+    display: flex;
+    padding: 0;
+  }
+
+  #navbar ul li {
+    margin: 0 .5rem;
+  }
+
+  #navbar ul li a {
+    display: block;
+    font-size: .9rem;
+    padding-left: 0;
+  }
+
+  #navbar .login .sign-in,
+  #navbar .login .sign-up {
+    margin: .5rem .3rem;
+    padding: .4rem .8rem;
+  }
+
+  /* Design Section Styling */
+  #design {
+    display: block;
+    text-align: center;
+  }
+
+  #design .design-content h1 {
+    font-size: 2rem;
+    line-height: 2.3rem;
+    margin: .5rem 0;
+    text-align: center;
+  }
+
+  #design .design-content p {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    text-align: center;
+  }
+
+  #design .design-content .btn,
+  #design .design-content .link {
+    display: inline-block;
+    margin: .5 .7rem;
+    color: var(--primary-color);
+
+  }
+
+  #design .design-content .link {
+    margin-left: .5rem;
+  }
+
+  #design .design-content .link i {
+    padding-right: .3rem;
+  }
+
+  #design .design-content .btn {
+    padding: .3rem .6rem;
+    background: var(--primary-color);
+    border-radius: 5px;
+    color: var(--body-color);
+    border: 1px solid var(--primary-color);
+  }
+
+  #design .design-content .btn:hover {
+    background: var(--body-color);
+    color: var(--primary-color);
+  }
+
+  #design .design-img img {
+    display: block;
+    margin: auto;
+    width: 100%;
+    margin: 1rem 0;
+  }
+}
