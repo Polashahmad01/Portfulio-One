@@ -171,8 +171,64 @@ a {
   width: 100%;
 }
 
+/* Tools Section Styling */
+#tools {
+  text-align: center;
+}
+#tools h1 {
+  font-size: 2.6rem;
+  text-align: center;
+  line-height: 3rem;
+  margin: 1rem 0;
+}
 
+#tools .card {
+  display: flex;
+  padding: 2rem;
+}
 
+#tools .card div i {
+  display: inline-block;
+  padding: 3rem;
+  border-radius: 50%;
+  background: var(--primary-color);
+  color: var(--body-color);
+  margin-bottom: 1rem;
+}
+
+#tools .card div i:first-child,
+#tools .card div i:last-child {
+  padding: 3rem;
+  border-radius: 50%;
+}
+
+#tools .card div h3 {
+  font-size: 1.4rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#tools .card div p {
+  font-size: 1.1rem;
+  text-align: center;
+  line-height: 1.8rem;
+  margin-bottom: 3rem;
+}
+
+#tools .btn {
+  background: var(--body-color);
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  padding: .7rem 1.5rem;
+  border-radius: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#tools .btn:hover {
+  background: var(--primary-color);
+  color: var(--body-color);
+}
 
 
 
@@ -269,5 +325,36 @@ a {
     margin: auto;
     width: 100%;
     margin: 1rem 0;
+  }
+
+  /* Tools Section */
+  #tools h1 {
+    font-size: 1.7rem;
+    text-align: center;
+    line-height: 2.5rem;
+    margin: 1rem 0;
+  }
+
+  #tools .card {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  #tools .card div h3 {
+    font-size: 1.1rem;
+  }
+
+  #tools .card div p {
+    font-size: .8rem;
+  }
+
+  #tools .btn {
+    padding: .3rem .6rem;
+  }
+
+  #tools .btn:hover {
+    background: var(--primary-color);
+    color: var(--body-color);
   }
 }
