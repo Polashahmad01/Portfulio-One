@@ -348,6 +348,61 @@ a {
   width: 90%;
 }
 
+/* Strategies Section Styling */
+#strategies {
+  display: block;
+}
+
+#strategies h2 {
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+#strategies p {
+  font-size: 1.1rem;
+  line-height: 1.8rem;
+  margin: 2rem 0;
+}
+
+#strategies .card {
+  display: flex;
+}
+
+#strategies .card div {
+  flex: 1;
+}
+
+#strategies .card div img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  background: #3F5766;
+  padding: 1rem;
+  border-radius: .3rem;
+}
+
+#strategies .card div p {
+  font-size: .8rem;
+  text-align: center;
+  margin: 2.2rem 0;
+}
+
+#strategies .card div h4 {
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Media Query */
 @media only screen and (max-width: 500px) {
@@ -573,5 +628,48 @@ a {
     display: block;
     margin: auto;
     width: 100%;
+  }
+
+  /* Strategies Section */
+  #strategies {
+    display: block;
+  }
+
+  #strategies h2 {
+    font-size: 1.7rem;
+    text-align: center;
+    margin: 1rem 0;
+  }
+
+  #strategies p {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    text-align: center;
+    margin: 1rem 0;
+  }
+
+  #strategies .card {
+    display: block;
+  }
+
+  #strategies .card div img {
+    display: block;
+    margin: auto;
+    background: #3F5766;
+    padding: 1rem;
+    border-radius: .3rem;
+    width: 30%;
+  }
+
+  #strategies .card div p {
+    font-size: .7rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  #strategies .card div h4 {
+    font-size: .9rem;
+    text-align: center;
+    margin-bottom: 1rem;
   }
 }
