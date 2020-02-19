@@ -307,7 +307,46 @@ a {
   width: 100%;
 }
 
+/* Marketer Section Styling */
+#marketer {
+  display: flex;
+  align-items: center;
+}
 
+#marketer .marketer-content {
+  flex: 1;
+}
+
+#marketer .marketer-img {
+  flex: 2;
+}
+
+#marketer .marketer-content h2 {
+  font-size: 2rem;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+#marketer .marketer-content p {
+  font-size: 1.1rem;
+  line-height: 1.8rem;
+  padding-left: 1rem;
+  margin: .5rem 0;
+  text-align: center;
+}
+
+#marketer .marketer-content h3 {
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  margin: .5rem 0;
+  text-align: center;
+}
+
+#marketer .marketer-img img {
+  display: block;
+  margin: auto;
+  width: 90%;
+}
 
 
 /* Media Query */
@@ -505,5 +544,34 @@ a {
     text-align: center;
     margin: .7rem 0;
     color: var(--primary-color);
+  }
+
+  /* Marketer Section */
+  #marketer {
+    display: block;
+  }
+  #marketer .marketer-content h2 {
+    font-size: 1.7rem;
+    text-align: center;
+    margin: 1rem 0;
+  }
+
+  #marketer .marketer-content p {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    text-align: center;
+    margin: .5rem 0;
+  }
+
+  #marketer .marketer-content h3 {
+    font-size: 1.4rem;
+    margin: 1rem 0;
+    text-align: center;
+  }
+
+  #marketer .marketer-img img {
+    display: block;
+    margin: auto;
+    width: 100%;
   }
 }
