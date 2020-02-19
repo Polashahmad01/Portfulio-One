@@ -392,9 +392,15 @@ a {
   text-align: center;
 }
 
-
-
-
+/* Footer Section */
+#main-footer {
+  display: block;
+  text-align: center;
+  background: var(--primary-color);
+  padding: 1rem;
+  color: var(--body-color);
+  border-radius: .3rem;
+}
 
 
 
@@ -671,5 +677,15 @@ a {
     font-size: .9rem;
     text-align: center;
     margin-bottom: 1rem;
+  }
+
+  /* footer */
+  #main-footer {
+    display: block;
+    font-size: .5rem;
+  }
+
+  #main-footer p span {
+    display: none;
   }
 }
