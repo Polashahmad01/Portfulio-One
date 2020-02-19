@@ -324,22 +324,18 @@ a {
 #marketer .marketer-content h2 {
   font-size: 2rem;
   margin: 1rem 0;
-  text-align: center;
 }
 
 #marketer .marketer-content p {
   font-size: 1.1rem;
   line-height: 1.8rem;
-  padding-left: 1rem;
-  margin: .5rem 0;
-  text-align: center;
+  margin: 1rem 0;
 }
 
 #marketer .marketer-content h3 {
   font-size: 1.3rem;
   line-height: 1.8rem;
   margin: .5rem 0;
-  text-align: center;
 }
 
 #marketer .marketer-img img {
@@ -411,7 +407,7 @@ a {
 
 
 /* Media Query */
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 767px) {
   /* Navbar Styling */
   #navbar {
     display: flex;
