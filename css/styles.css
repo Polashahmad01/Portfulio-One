@@ -190,7 +190,7 @@ a {
 #tools .card div i {
   display: inline-block;
   padding: 3rem;
-  border-radius: 50%;
+  border-radius: 50% !important;
   background: var(--primary-color);
   color: var(--body-color);
   margin-bottom: 1rem;
