@@ -515,6 +515,10 @@ a {
     padding: 1rem;
   }
 
+  #tools .card div i {
+    padding: 1rem;
+  }
+
   #tools .card div h3 {
     font-size: 1.1rem;
   }
